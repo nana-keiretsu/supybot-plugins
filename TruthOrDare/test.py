@@ -3,3 +3,8 @@
 # Full license text can be found here: http://www.wtfpl.net/about/
 # I'd put copyright, but that's inherent in the US and I prefer copyleft.
 ###
+
+from supybot.test import *
+
+class TruthOrDareTestCase(PluginTestCase):
+    plugins = ('TruthOrDare',)
