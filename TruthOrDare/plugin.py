@@ -4,6 +4,14 @@
 # I'd put copyright, but that's inherent in the US and I prefer copyleft.
 ###
 
+import supybot.utils as utils
+from supybot.commands import *
+import supybot.ircmsgs as ircmsgs
+import supybot.ircutils as ircutils
+import supybot.callbacks as callbacks
+from supybot.i18n import PluginInternationalization, internationalizeDocstring
+_ = PluginInternationalization('Games')
+
 class TruthOrDare(callbacks.Plugin):
     """Helps organize games of Truth or Dare
     """
