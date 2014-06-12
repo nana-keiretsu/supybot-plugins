@@ -73,6 +73,14 @@ class TruthOrDare(callbacks.Plugin):
 
     players = wrap(players)
 
+    def chicken(self, irc, msg, args):
+      """[]
+      Configures settings for a game of Truth or Dare.
+      """
+      irc.reply(_('You have chickened out of this round!'),prefixNick=True)
+
+    chicken = wrap(chicken)
+
     def tod(self, irc, msg, args):
       """[]
       Configures settings for a game of Truth or Dare.
