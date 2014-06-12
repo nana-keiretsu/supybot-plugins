@@ -41,19 +41,11 @@ class TruthOrDare(callbacks.Plugin):
 
     play = wrap(play)
 
-    def pass(self, irc, msg, args):
-      """[]
-      Passes your turn in a game of Truth or Dare.
-      """
-      irc.reply(_('You have passed!'),prefixNick=True)
-
-    pass = wrap(pass)
-
     def truth(self, irc, msg, args):
       """[]
       Selects Truth in a game of Truth or Dare.
       """
-      irc.reply(_('You have passed!'),prefixNick=True)
+      irc.reply(_('You have selected Truth!'),prefixNick=True)
 
     truth = wrap(truth)
 
@@ -61,7 +53,7 @@ class TruthOrDare(callbacks.Plugin):
       """[]
       Selects Dare in a game of Truth or Dare.
       """
-      irc.reply(_('You have passed!'),prefixNick=True)
+      irc.reply(_('You have selected Dare!'),prefixNick=True)
 
     dare = wrap(dare)
 
@@ -69,7 +61,7 @@ class TruthOrDare(callbacks.Plugin):
       """[]
       Selects both Truth and Dare in a game of Truth or Dare.
       """
-      irc.reply(_('You have passed!'),prefixNick=True)
+      irc.reply(_('You have selected Truth and Dare!'),prefixNick=True)
 
     double = wrap(double)
 
@@ -77,7 +69,7 @@ class TruthOrDare(callbacks.Plugin):
       """[]
       Shows players in a game of Truth or Dare.
       """
-      irc.reply(_('You have passed!'),prefixNick=True)
+      irc.reply(_('Players currently in the game...'),prefixNick=True)
 
     players = wrap(players)
 
@@ -85,7 +77,7 @@ class TruthOrDare(callbacks.Plugin):
       """[]
       Configures settings for a game of Truth or Dare.
       """
-      irc.reply(_('You have passed!'),prefixNick=True)
+      irc.reply(_('Settings for Truth or Dare...'),prefixNick=True)
 
     tod = wrap(tod)
     
