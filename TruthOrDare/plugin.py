@@ -80,5 +80,13 @@ class TruthOrDare(callbacks.Plugin):
       irc.reply(_('Settings for Truth or Dare...'),prefixNick=True)
 
     tod = wrap(tod)
+
+    def score(self, irc, msg, args):
+      """[]
+      Configures settings for a game of Truth or Dare.
+      """
+      irc.reply(_('Current score for players...'),prefixNick=True)
+
+    score = wrap(score)
     
 Class = TruthOrDare
