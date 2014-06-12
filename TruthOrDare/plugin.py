@@ -10,7 +10,7 @@ import supybot.ircmsgs as ircmsgs
 import supybot.ircutils as ircutils
 import supybot.callbacks as callbacks
 from supybot.i18n import PluginInternationalization, internationalizeDocstring
-_ = PluginInternationalization('Games')
+_ = PluginInternationalization('TruthOrDare')
 
 class TruthOrDare(callbacks.Plugin):
     """Helps organize games of Truth or Dare
