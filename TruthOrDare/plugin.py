@@ -13,7 +13,7 @@ class TruthOrDare(callbacks.Plugin):
       """[<nick>]
       Asks <nick> whether they want to choose truth or dare.
       """
-      irc.reply(str(result),prefixNick=True)
+      irc.reply(_('Asked nick to whatever.'),prefixNick=True)
 
     ask = wrap(ask,['somethingWithoutSpaces'])
 
